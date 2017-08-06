@@ -1,2 +1,286 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+ <% @title = "Acheter des ethers facilemenet" %>
+  <div class="header-container">
+    <div class='container is-large'>
+      <div class="header">
+        <div id="video-area" class="is-active">
+
+            <%= video_tag "banner.mp4", autoplay: :autoplay, loop: :loop, size: "100%"%>
+
+            </div>
+
+            <div class='header-content'>
+              <h1 class="header-alpha"> Acheter vos <font color=#FF5959>ethers</font> instantanément. </h1>
+              <div class='header-beta'>
+                <div class='header-beta-switcher'>
+                  <div class='header-beta-switcher-item is-active'>
+                    <span>
+                      Découvrir la technologie Ethereum
+                    </span>
+                  </div>
+                  <div class='header-beta-switcher-item '>
+                    <span>
+                      Investir sur des crypto-monnaies
+                    </span>
+                  </div>
+                  <div class='header-beta-switcher-item '>
+                    <span>
+                      Comprendre les évolutions de la Blockchain
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class='cta-box'>
+
+
+
+                <div class='cta-box-btn-container'>
+                  <div class='cta-box-phone-title'>
+                  </div>
+                  <a class='cta-box-btn' href='https://m.me/ethereumFR' target='_blank'>
+                   ⚡J'ACHETE DES ETHERS ⚡
+                 </a>
+               </div>
+             </div>
+
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <div class='features-wrapper'>
+       <div class='features-title text-center'>Cours de l'Ether (ETH)</div>
+
+       <!-- TradingView Widget BEGIN -->
+       <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+       <script type="text/javascript">
+        new TradingView.widget({
+          "width": 800,
+          "height": 400,
+          "symbol": "KRAKEN:ETHEUR",
+          "interval": "D",
+          "timezone": "Etc/UTC",
+          "theme": "White",
+          "style": "1",
+          "locale": "fr",
+          "toolbar_bg": "#f1f3f6",
+          "enable_publishing": false,
+          "allow_symbol_change": true,
+          "hideideas": true
+        });
+      </script>
+      <!-- TradingView Widget END -->
+      <div class='container'>
+        <!-- <div class='feature-item-description'>
+        <li>Acheter des <strong>Ethers (ETH)</strong> en quelques minutes</li><br />
+        <li>Découvrir <strong>l'écosystème Ethereum</strong> et connaître les <strong>actualités</strong></li><br />
+        <li>Comprendre les différences entre <strong>Bitcoin et Ethereum</strong> </li> <br />
+        <li>Être <strong>accompagné</strong> en cas de questions <strong></strong></li>
+
+      </div> -->
+
+    </div>
+    <div class='container'>
+      <div class='features-title text-center'>
+        <br />Où acheter des Ethers instantanément ?
+      </div>
+        <div class='features-title-underline' style="margin-bottom: 30px;"></div>
+
+      <table class="table">
+        <tr>
+          <th>#</th>
+          <th>Plateforme</th>
+          <th>Paiement</th>
+          <th>Note</th>
+          <th>Favorite</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><%= link_to "Coinbase", "https://www.coinbase.com/join/59767849f8b85600b24052d1"%></td>
+          <td style="text-align: center;"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> <i class="fa fa-exchange" aria-hidden="true"></i></td>
+          <td>4.8 / 5</td>
+          <td style="text-align: center;"><i class="fa fa-heart-o" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><%= link_to "Coinhouse", "https://www.coinhouse.io/r/60833"%></td>
+          <td style="text-align: center;"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"></i>
+            <i class="fa fa-exchange" aria-hidden="true"></i></td>
+          <td>4.5 / 5</td>
+        </tr>
+        <tr>
+        <td>3</td>
+          <td><%= link_to "CEX.IO", "https://cex.io/r/0/up107423008/0/"%></td>
+          <td style="text-align: center;"><i class="fa fa-credit-card-alt" aria-hidden="true"> <i class="fa fa-btc" aria-hidden="true"></i></i></td>
+          <td>4.3 / 5</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><%= link_to "ETORO", "http://partners.etoro.com/A65518_TClick.aspx"%></td>
+          <td style="text-align: center;"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></td>
+          <td>4 / 5</td>
+        </tr>
+      </table>
+      <div class="features">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class='features-footer'>
+  <!-- <div class='container'>
+    <div class='features-title text-center'>
+      Ils nous ont fait confiance :
+      <div class='features-title-underline'>
+      </div>
+    </div>
+  </div> -->
+
+    <!-- <div class='testimonials-wrapper'>
+      <div class="container">
+        <div class="testimonials">
+        </div>
+      </div>
+    </div> -->
+
+
+
+    <div class="grid-wrapper">
+      <div class="container is-large">
+        <div class='grid'>
+
+          <div class="grid-item-container">
+        <%= link_to "https://www.coinbase.com/join/59767849f8b85600b24052d1", target: :blank do%>
+            <div class='grid-item' style="background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(<%= image_url("ciel1.jpg")%>)">
+
+              <div class="text-center">
+                <div class='grid-item-name'>
+                  COINBASE
+                </div>
+                <div class='grid-item-description'>
+                  Leader européen de l'achat/vente de cryptomonnaies
+                </div>
+              </div>
+            </div>
+            <% end %>
+        </div>
+
+
+          <div class="grid-item-container">
+          <%= link_to "https://www.coinbase.com/join/59767849f8b85600b24052d1", target: :blank do%>
+            <div class='grid-item' style="background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(<%= image_url("ciel2.jpg")%> )"">
+              <div class="text-center">
+                <div class='grid-item-name'>
+                  COINHOUSE
+                </div>
+                <div class='grid-item-description'>
+                  Plateforme de vente française développée par La Maison du Bitcoin
+                </div>
+              </div>
+            </div>
+          <% end %>
+          </div>
+
+          <div class="grid-item-container">
+          <%= link_to "http://partners.etoro.com/A65518_TClick.aspx", target: :blank do%>
+            <div class='grid-item' style="background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(<%= image_url("ciel3.jpg")%>)">
+              <div class="text-center">
+                <div class='grid-item-name'>
+                  ETORO
+                </div>
+                <div class='grid-item-description'>
+                  Leader mondial du trading en ligne
+                </div>
+              </div>
+            </div>
+          <% end %>
+          </div>
+
+
+          <div class="grid-item-container">
+          <%= link_to "https://cex.io/r/0/up107423008/0/", target: :blank do%>
+            <div class='grid-item' style="background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(<%= image_url("ciel4.jpg")%>)">
+              <div class="text-center">
+                <div class='grid-item-name'>
+                  CEX.IO
+                </div>
+                <div class='grid-item-description'>
+                  Le leader britannique des cryptomonnaies et pionnier du cloud mining
+                </div>
+              </div>
+            </div>
+            <% end %>
+          </div>
+
+          </div>
+
+      </div>
+    </div>
+
+
+
+<!-- <div class='before-last-section'>
+  <div class='header-alpha'>
+    Ils parlent de easymentor.
+  </div>
+
+<div class="grid-wrapper-logo">
+  <div class="container is-large">
+    <div class='grid'>
+        <div class="grid-item-logo">
+          <img src="images/partenaire/logo_ArtisanMag.png" height="70px" />
+        </div>
+        <div class="grid-item-logo">
+          <img src="images/partenaire/logo-frenchweb.jpg" height="70px"/>
+        </div>
+        <div class="grid-item-logo">
+          <img src="images/partenaire/logo_usinedigitale.jpg" width="100%"/>
+        </div>
+
+        <div class="grid-item-logo">
+          <img src="images/partenaire/logo-bonjouridee.png" height="70px"/>
+        </div>
+        <div class="grid-item-logo">
+          <img src="images/partenaire/logo_silex.png" height="70px"/>
+        </div>
+        <div class="grid-item-logo">
+          <img src="images/partenaire/logo_NLQ.png" height="70px"/>
+        </div>
+    </div>
+  </div>
+</div>
+</div> -->
+
+
+<!-- <div class='last-section'>
+  <div class='header-alpha'>
+    <p> Nos experts vous guident pour investir dans les <br>
+      crypto-monnaies .</p>
+    </div>
+    <div class='cta-box'>
+      <div class='cta-box-phone'>
+        <div class='cta-box-phone-title'>
+          J'envoie un texto au
+        </div>
+        <div class='cta-box-phone-number'>
+          <i class='mdi mdi-cellphone'></i> <a href="sms:+33644604444;&body=Bonjour Acheter-Ethereum.com, je souhaiterais être recontacté. Merci!"><span>06 44 60 44 44</span></a>
+        </div>
+      </div>
+      <div class='cta-box-btn-title'>
+        <span>OU</span>
+      </div>
+      <div class='cta-box-btn-container'>
+        <div class='cta-box-phone-title'>
+          Je le fais en ligne
+        </div>
+        <a class='cta-box-btn' href='https://m.me/ethereumFR' target='_blank'>
+         ⚡ MESSENGER ⚡
+       </a>
+     </div>
+   </div>
+
+ </div> -->
+
+
+</div>
+
