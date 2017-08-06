@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @platform.name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @platform.url %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @platform.description %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @platform.note %>
+</p>
+
+<p>
+  <strong>Card:</strong>
+  <%= @platform.card %>
+</p>
+
+<p>
+  <strong>Transfer:</strong>
+  <%= @platform.transfer %>
+</p>
+
+<p>
+  <strong>Crypto:</strong>
+  <%= @platform.crypto %>
+</p>
+
+<p>
+  <strong>Paypal:</strong>
+  <%= @platform.paypal %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @platform.language %>
+</p>
+
+<%= link_to 'Edit', edit_platform_path(@platform) %> |
+<%= link_to 'Back', platforms_path %>
