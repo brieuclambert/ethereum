@@ -3,13 +3,71 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>TODO</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
+
+ <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WRVQBX4');</script>
+<!-- End Google Tag Manager -->
+
+  <link href="images/favicon.png" rel="icon" type="image/png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport"              content="width=device-width, initial-scale=1.0" />
+
+  <title><%= @title %></title>
+
+  <meta name="description"           content="ethereum, acheter, bitcoin, ether, ethers, ETH, crypto, cryptomonnaie, litecoin, ripple, kraken, trading" />
+
+  <!-- Geocoding -->
+  <meta name="geo.placename"         content="France" />
+
+  <!-- Langue -->
+  <link rel="alternate" hreflang="fr" href="index" />
+
+  <!-- Microdata -->
+  <meta name="name"              content="Achat Ethereum : Comment acheter des Ethers (ETH) ?" />
+  <meta name="description"       content="ethereum, acheter, bitcoin, ether, ethers, ETH, crypto, cryptomonnaie, litecoin, ripple, kraken, trading" />
+  <meta name="image"             content="/meta.jpg" />
+
+  <!-- Facebook Open Graph data -->
+  <meta name="og:site_name"      content="Achat Ethereum : Comment acheter des Ethers (ETH) ?" />
+  <meta name="og:title"          content="Achat Ethereum : Comment acheter des Ethers (ETH) ?" />
+  <meta name="og:description"    content="ethereum, acheter, bitcoin, ether, ethers, ETH, crypto, cryptomonnaie, litecoin, ripple, kraken, trading" />
+  <meta name="og:image"          content="/meta.jpg" />
+  <meta name="og:type"           content="website" />
+  <meta name="og:url"            content="/acheterethereum/" />
+
+  <!-- Google+ -->
+  <meta name="name"              content="Achat Ethereum : Comment acheter des Ethers (ETH) ?" />
+  <meta name="description"       content="ethereum, acheter, bitcoin, ether, ethers, ETH, crypto, cryptomonnaie, litecoin, ripple, kraken, trading" />
+  <meta name="image"             content="/meta.jpg" />
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card"          content="summary_large_image" />
+  <meta name="twitter:site"          content="@achat_ethereum" />
+  <meta name="twitter:title"         content="Achat Ethereum : Comment acheter des Ethers (ETH) ?" />
+  <meta name="twitter:description"   content="ethereum, acheter, bitcoin, ether, ethers, ETH, crypto, cryptomonnaie, litecoin, ripple, kraken, trading" />
+  <meta name="twitter:image"         content="/meta.jpg" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
   </head>
   <body>
+    <div class="site-content">
+    <%= render 'shared/navbar' %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
+    <%= render 'shared/footer' %>
+    </div>
+    <script src="javascripts/scrollreveal.min.js"></script>
+ <script src="javascripts/scroll.js"></script>
+ <script src="javascripts/sr.js"></script>
+ <script src="javascripts/switcher.js"></script>
+ <script src="javascripts/video.js"></script>
+ <script>$('.dropdown-toggle').dropdown()</script>
   </body>
 </html>
